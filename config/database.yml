@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: Ryans_Bucket_List_development
+
+ 
+test:
+  <<: *default
+  database: Ryans_Bucket_List_test
+
+production:
+  <<: *default
+  database: Ryans_Bucket_List_production
+  username: Ryans_Bucket_List
+  password: <%= ENV['RYANS_BUCKET_LIST_DATABASE_PASSWORD'] %>

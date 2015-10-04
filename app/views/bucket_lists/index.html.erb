@@ -1,0 +1,14 @@
+<% @bucket_lists.each do |bucket_list| %>
+  <div class="index_row clearfix">
+    <h2 class="bucket_list_title"><%= link_to bucket_list.title, bucket_list %></h2>
+    <p class="bucket_list_sub_title"><%= bucket_list.description %></p>
+  </div>
+<% end %>
+
+<div class="links">
+  <%= link_to "New Bucket List", new_bucket_list_path %>
+</div>
+
+
+
+
