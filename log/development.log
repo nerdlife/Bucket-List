@@ -18578,3 +18578,650 @@ Processing by BucketListsController#show as HTML
   Rendered bucket_items/_form.html.erb (1.2ms)
   Rendered bucket_lists/show.html.erb within layouts/application (5.7ms)
 Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-03 14:40:49 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "Ryans_Bucket_List_development" does not exist
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (96.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (227.4ms)
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBucketLists (20150829205841)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "bucket_lists" ("id" serial primary key, "title" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150829205841"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBucketItems (20150829210411)
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "bucket_items" ("id" serial primary key, "content" character varying, "bucket_list_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_bucket_items_on_bucket_list_id" ON "bucket_items"  ("bucket_list_id")
+  [1m[36m (2.3ms)[0m  [1mALTER TABLE "bucket_items" ADD CONSTRAINT "fk_rails_45e4f4a970"
+FOREIGN KEY ("bucket_list_id")
+  REFERENCES "bucket_lists" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150829210411"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddCompletedAtToBucketItems (20150830010424)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bucket_items" ADD "completed_at" timestamp[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150830010424"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'bucket_items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'bucket_lists'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-10-03 14:42:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BucketListsController#index as HTML
+  [1m[35mBucketList Load (0.6ms)[0m  SELECT "bucket_lists".* FROM "bucket_lists"
+  Rendered bucket_lists/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 562ms (Views: 543.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:42:14 -0700
+
+
+Started GET "/bucket_lists/new" for ::1 at 2016-10-03 14:42:17 -0700
+Processing by BucketListsController#new as HTML
+  Rendered bucket_lists/_form.html.erb (29.6ms)
+  Rendered bucket_lists/new.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 74ms (Views: 64.6ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/bucket_lists" for ::1 at 2016-10-03 14:42:30 -0700
+Processing by BucketListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6AyB8xgTHFEfUKfYxAWMgP2FCYQCCYq1crogSZMGHP30jxJa4eMp2qPHp0t0nkgxKy3ctVPK/6HPELEjpoa9cA==", "bucket_list"=>{"title"=>"My List", "description"=>"My bucket list\r\n"}, "commit"=>"Create Bucket list"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "bucket_lists" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "My List"], ["description", "My bucket list\r\n"], ["created_at", "2016-10-03 21:42:30.440114"], ["updated_at", "2016-10-03 21:42:30.440114"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bucket_lists/1
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:42:30 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBucketItem Load (2.5ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered bucket_items/_form.html.erb (29.8ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (78.2ms)
+Completed 200 OK in 154ms (Views: 113.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/bucket_lists/1/bucket_items" for ::1 at 2016-10-03 14:42:34 -0700
+Processing by BucketItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QC2wkKOM6f1XeA13I3dCM61i4F6TLxs5Ou0VlCTDASJcriM5WnzcduvvDeST7IaCe8o1b8Lsbi2HR4T+EUOgrw==", "bucket_item"=>{"content"=>""}, "commit"=>"Create Bucket item", "bucket_list_id"=>"1"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "bucket_items" ("content", "bucket_list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", ""], ["bucket_list_id", 1], ["created_at", "2016-10-03 21:42:34.645713"], ["updated_at", "2016-10-03 21:42:34.645713"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bucket_lists/1
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:42:34 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 1]]
+  Rendered bucket_items/_bucket_item.html.erb (1.4ms)
+  Rendered bucket_items/_form.html.erb (1.4ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/bucket_lists/1/bucket_items/1/complete" for ::1 at 2016-10-03 14:42:44 -0700
+Processing by BucketItemsController#complete as HTML
+  Parameters: {"authenticity_token"=>"gZ6v92SZYGjG2Nsg1EFBcV0ALWSc349BXSJzigxhXlGdHTxenWlV43pP27Nk2oXAi6j4Vc0c+lXgiOLgOeH/3A==", "bucket_list_id"=>"1", "id"=>"1"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT  "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1 AND "bucket_items"."id" = $2 LIMIT 1[0m  [["bucket_list_id", 1], ["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "bucket_items" SET "completed_at" = $1, "updated_at" = $2 WHERE "bucket_items"."id" = $3[0m  [["completed_at", "2016-10-03 21:42:44.222119"], ["updated_at", "2016-10-03 21:42:44.222732"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/bucket_lists/1
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:42:44 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucketList Load (0.3ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBucketItem Load (0.6ms)[0m  SELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1  [["bucket_list_id", 1]]
+  Rendered bucket_items/_bucket_item.html.erb (0.5ms)
+  Rendered bucket_items/_form.html.erb (1.8ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/bucket_lists/1/bucket_items" for ::1 at 2016-10-03 14:42:52 -0700
+Processing by BucketItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ZdwHOihKSWRoRiPWSfUzXStz6djXeSriX73HTr0EUzFFOO1EVEcri02GBzpvBB8ogUaljKekb801GZ3D3SwwQ==", "bucket_item"=>{"content"=>"Item 1"}, "commit"=>"Create Bucket item", "bucket_list_id"=>"1"}
+  [1m[36mBucketList Load (0.3ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bucket_items" ("content", "bucket_list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Item 1"], ["bucket_list_id", 1], ["created_at", "2016-10-03 21:42:52.134543"], ["updated_at", "2016-10-03 21:42:52.134543"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/bucket_lists/1
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:42:52 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucketList Load (0.3ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBucketItem Load (0.3ms)[0m  SELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1  [["bucket_list_id", 1]]
+  Rendered bucket_items/_bucket_item.html.erb (1.2ms)
+  Rendered bucket_items/_form.html.erb (1.7ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:44:02 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucketList Load (0.3ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBucketItem Load (0.4ms)[0m  SELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1  [["bucket_list_id", 1]]
+  Rendered bucket_items/_bucket_item.html.erb (1.1ms)
+  Rendered bucket_items/_form.html.erb (2.9ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:44:02 -0700
+
+
+Started POST "/bucket_lists/1/bucket_items" for ::1 at 2016-10-03 14:44:16 -0700
+Processing by BucketItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eUh0Fco4yBlhouekEV1oNaa+Go5wEOYoA1LAFpxjslply+e8M8j9kt015zehxqyEcBbPvyHTkzy++FF8qeMT1w==", "bucket_item"=>{"content"=>"Learn Spanish"}, "commit"=>"Create Bucket item", "bucket_list_id"=>"1"}
+  [1m[36mBucketList Load (0.2ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bucket_items" ("content", "bucket_list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Learn Spanish"], ["bucket_list_id", 1], ["created_at", "2016-10-03 21:44:16.583387"], ["updated_at", "2016-10-03 21:44:16.583387"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/bucket_lists/1
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/bucket_lists/1" for ::1 at 2016-10-03 14:44:16 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucketList Load (0.2ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBucketItem Load (0.4ms)[0m  SELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1  [["bucket_list_id", 1]]
+  Rendered bucket_items/_bucket_item.html.erb (0.9ms)
+  Rendered bucket_items/_form.html.erb (1.2ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bucket_lists" for ::1 at 2016-10-03 14:44:22 -0700
+Processing by BucketListsController#index as HTML
+  [1m[36mBucketList Load (0.5ms)[0m  [1mSELECT "bucket_lists".* FROM "bucket_lists"[0m
+  Rendered bucket_lists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bucket_lists/new" for ::1 at 2016-10-03 14:44:28 -0700
+Processing by BucketListsController#new as HTML
+  Rendered bucket_lists/_form.html.erb (1.7ms)
+  Rendered bucket_lists/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bucket_lists" for ::1 at 2016-10-03 14:44:42 -0700
+Processing by BucketListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vs/9/FKmF9eRkdGnqylrrKqk1MJzpe4nwj89TtLmk5NKTG5Vq1YiXC0G0TQbsq8dfAwB8yJmmzN/lawk52YyHg==", "bucket_list"=>{"title"=>"List Numero Dos", "description"=>"My second list\r\n"}, "commit"=>"Create Bucket list"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bucket_lists" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "List Numero Dos"], ["description", "My second list\r\n"], ["created_at", "2016-10-03 21:44:42.884357"], ["updated_at", "2016-10-03 21:44:42.884357"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/bucket_lists/2
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:44:42 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBucketList Load (0.2ms)[0m  [1mSELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mBucketItem Load (0.2ms)[0m  SELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1  [["bucket_list_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered bucket_items/_form.html.erb (1.4ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bucket_lists" for ::1 at 2016-10-03 14:44:45 -0700
+Processing by BucketListsController#index as HTML
+  [1m[36mBucketList Load (0.3ms)[0m  [1mSELECT "bucket_lists".* FROM "bucket_lists"[0m
+  Rendered bucket_lists/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:44:54 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.5ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.5ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered bucket_items/_form.html.erb (3.5ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/bucket_lists/2/bucket_items" for ::1 at 2016-10-03 14:45:03 -0700
+Processing by BucketItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"goL1+6jiARJR8lrBjVsDqzPbhOD4iesSdihKWdWLvkCeAWZSURI0me1lWlI9wMca5XNR0alKngbLgtsz4AsfzQ==", "bucket_item"=>{"content"=>"Item Numero Uno"}, "commit"=>"Create Bucket item", "bucket_list_id"=>"2"}
+  [1m[35mBucketList Load (0.2ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bucket_items" ("content", "bucket_list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "Item Numero Uno"], ["bucket_list_id", 2], ["created_at", "2016-10-03 21:45:03.010155"], ["updated_at", "2016-10-03 21:45:03.010155"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bucket_lists/2
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:45:03 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.2ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.2ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.4ms)
+  Rendered bucket_items/_form.html.erb (1.1ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/bucket_lists/2/bucket_items" for ::1 at 2016-10-03 14:45:11 -0700
+Processing by BucketItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5rNjHWtZK5wSqcjzX7Gk6v3WJkLL0vhNREnqgH7xy9vGV4ljF1RJczdp7B95QIifV+NqFrsPvWIu7bANHtmog==", "bucket_item"=>{"content"=>"Numero Dos Item"}, "commit"=>"Create Bucket item", "bucket_list_id"=>"2"}
+  [1m[35mBucketList Load (0.4ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bucket_items" ("content", "bucket_list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "Numero Dos Item"], ["bucket_list_id", 2], ["created_at", "2016-10-03 21:45:11.219478"], ["updated_at", "2016-10-03 21:45:11.219478"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bucket_lists/2
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:45:11 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.7ms)
+  Rendered bucket_items/_form.html.erb (1.2ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:46:17 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.4ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.2ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.7ms)
+  Rendered bucket_items/_form.html.erb (1.3ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:46:17 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:46:39 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.6ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (1.0ms)
+  Rendered bucket_items/_form.html.erb (1.8ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:46:39 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:48:15 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.2ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.2ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.6ms)
+  Rendered bucket_items/_form.html.erb (1.4ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:48:15 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:48:32 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.4ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.7ms)
+  Rendered bucket_items/_form.html.erb (1.0ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:48:32 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:48:49 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (3.0ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.8ms)
+  Rendered bucket_items/_form.html.erb (1.2ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:48:49 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:49:01 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.6ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (1.0ms)
+  Rendered bucket_items/_form.html.erb (1.3ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:49:01 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:49:10 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (1.0ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.2ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (1.0ms)
+  Rendered bucket_items/_form.html.erb (1.8ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:49:10 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:49:17 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.9ms)
+  Rendered bucket_items/_form.html.erb (1.4ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:49:17 -0700
+
+
+Started GET "/bucket_lists/2" for ::1 at 2016-10-03 14:49:33 -0700
+Processing by BucketListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBucketList Load (0.3ms)[0m  SELECT  "bucket_lists".* FROM "bucket_lists" WHERE "bucket_lists"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mBucketItem Load (0.3ms)[0m  [1mSELECT "bucket_items".* FROM "bucket_items" WHERE "bucket_items"."bucket_list_id" = $1[0m  [["bucket_list_id", 2]]
+  Rendered bucket_items/_bucket_item.html.erb (0.7ms)
+  Rendered bucket_items/_form.html.erb (1.5ms)
+  Rendered bucket_lists/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-10-03 14:49:33 -0700
+
+
+Started GET "/assets/bootstrap.min.css.scss.self-6a2a7d5d6c40d705219291bd71ee2e3537c9957ab3256c7f6ab7d180e1370fdd.css?body=1" for ::1 at 2016-10-03 14:49:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-03 14:49:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-10-03 14:49:33 -0700
+
+
+Started GET "/assets/application.self-ab77162e29876e34f3f835cc902c105093e66990f0169c458e3ce72c2bbb037e.css?body=1" for ::1 at 2016-10-03 14:49:33 -0700
+
+
+Started GET "/assets/application.self-cf2deb24664968251b5e10416a40987d78738f213ddd1b695d8777f51f235efa.js?body=1" for ::1 at 2016-10-03 14:49:33 -0700

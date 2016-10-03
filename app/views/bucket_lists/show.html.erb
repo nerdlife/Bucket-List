@@ -4,15 +4,15 @@
 
 <p id="notice"><%= notice %></p>
 <div id="bucket_items_wrapper">
-	<%= render @bucket_list.bucket_items %>
-	<div id="form">
-		<%= render "bucket_items/form" %>
-	</div>
+    <%= render @bucket_list.bucket_items %>
+    <div id="form">
+        <%= render "bucket_items/form" %>
+    </div>
 </div>
 
 <div class="links">
-	<%= link_to 'Edit', edit_bucket_list_path(@bucket_list) %> |
-	<%= link_to 'Delete', bucket_list_path(@bucket_list), method: :delete, data: { confirm: "Are you sure?" }
- %> |
-  <%= link_to 'Back', bucket_lists_path %>
+    <%= link_to 'Edit', edit_bucket_list_path(@bucket_list) %> |
+    <%= link_to 'Delete', bucket_list_path(@bucket_list), method: :delete, data: { confirm: "Are you sure?" }
+    %> |
+    <%= link_to 'Back', bucket_lists_path %>
 </div>

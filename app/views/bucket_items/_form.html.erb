@@ -1,4 +1,6 @@
+
+
 <%= form_for([@bucket_list, @bucket_list.bucket_items.build]) do |f| %>
-	<%= f.text_field :content, placeholder: "New Bucket List Activity" %>
-	<%= f.submit %>
+    <%= f.text_field :content, placeholder: "Enter New Here" %>
+    <%= f.submit %>
 <% end %>
