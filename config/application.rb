@@ -12,8 +12,8 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 module RyansBucketList
-  class Application < Rails::Application
-    
-    config.active_record.raise_in_transactional_callbacks = true
-  end
+    class Application < Rails::Application
+
+        config.active_record.raise_in_transactional_callbacks = true
+    end
 end

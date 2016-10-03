@@ -1,5 +1,7 @@
 <%= form_for(@bucket_list) do |f| %>
+
 <% if @bucket_list.errors.any? %>
+
 <div id="error_explanation">
     <h2><%= pluralize(@bucket_list.errors.count, "error") %> prohibited this bucket_list from being saved:</h2>
 
@@ -9,6 +11,7 @@
         <% end %>
     </ul>
 </div>
+
 <% end %>
 
 <div class="field">
@@ -22,4 +25,5 @@
 <div class="actions">
     <%= f.submit %>
 </div>
+
 <% end %>
