@@ -40,7 +40,7 @@ BucketItem.create([
 # 2nd Seed List 
 BucketList.create([
     title: 'Second seed bucket list', 
-    description: 'This is the first Bucket List Seed', 
+    description: 'This is the 2nd Bucket List Seed', 
     created_at: (rand*100).days.ago, 
     updated_at: (rand*10).days.ago
 ])
